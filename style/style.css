@@ -1,9 +1,13 @@
 /* general style */
+body {
+  max-width: 1536px;
+}
 * {
   font-family: "Azeret Mono", monospace;
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  word-spacing: -2px;
 }
 
 .primary-button {
@@ -13,11 +17,12 @@
   font-weight: 600;
   font-size: 13px;
   cursor: pointer;
+  border: 1px solid rgb(13, 19, 33);
 }
 
 .desc {
   color: rgb(13, 19, 33, 0.7);
-  font-size: 15px;
+  font-size: 14px;
   line-height: 23px;
 }
 
@@ -46,7 +51,7 @@ nav > ul {
 /* start of the hero section (inside header) */
 
 .hero-section {
-  max-width: 1536px;
+  /* max-width: 1536px; */
   height: 695px;
   display: flex;
   justify-content: center;
@@ -120,7 +125,7 @@ main {
   display: flex;
   flex-direction: column;
   row-gap: 25px;
-  border: 1px solid green;
+
   padding: 80px 97px 80px 97px;
   margin: 74px 0px;
 }
@@ -178,22 +183,101 @@ main {
 
 /* end of task section style  (inside main) */
 
+/* start of inspiration section  */
+
 .inspiration-section {
 }
 
-.inspiration-about {
+.inspiration-about,
+.target-about,
+.nextTarget-about {
   text-align: center;
-  border: 1px solid blue;
   width: 80%;
   margin: 0 auto;
-}
-.inspiration-about .title {
-  margin: 16px;
-}
-.inspiration-about .desc {
   margin-bottom: 48px;
 }
-.inspiration-thumbnail {
-  background-color: rgb(210, 17, 17);
-  padding: 20px;
+.inspiration-about .title,
+.target-about .title,
+.nextTarget-about .title {
+  margin: 16px;
 }
+
+.inspiration-thumbnail {
+  padding: 20px;
+  border: 1px solid rgba(13, 19, 33, 0.2);
+}
+
+/* start of target section  */
+
+.target-section {
+  margin: 50px 0px;
+}
+
+.target-card-section {
+  display: flex;
+  column-gap: 15px;
+}
+.target-card-section .card {
+  border-radius: 16px;
+
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.target-card-section .card img {
+  width: 40px;
+}
+
+.target-card-section .card .link {
+  color: black;
+  font-weight: 600;
+}
+
+.target-card-section #card-1 {
+  background-color: rgba(255, 76, 30, 0.05);
+}
+
+.target-card-section #card-2 {
+  background-color: rgba(0, 76, 232, 0.05);
+}
+
+.target-card-section #card-3 {
+  background-color: rgba(255, 223, 0, 0.05);
+}
+
+/* end of target section styles  */
+
+/* nextTarget styles  */
+
+.nextTarget-section {
+  margin: 70px 0px;
+}
+
+.nextTarget-section .card {
+  display: flex;
+  padding: 30px;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid rgba(13, 19, 33, 0.15);
+  border-radius: 16px;
+  margin-bottom: 20px;
+}
+
+.nextTarget-logo img {
+  width: 90px;
+}
+
+.nextTarget-details {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.nextTarget-details .link {
+  color: black;
+  font-weight: 600;
+}
+
+/* end of next target section */
