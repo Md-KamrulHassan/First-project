@@ -15,8 +15,14 @@
   cursor: pointer;
 }
 
-.primary-font-color {
+.desc {
   color: rgb(13, 19, 33, 0.7);
+  font-size: 15px;
+  line-height: 23px;
+}
+
+.title {
+  color: rgb(13, 19, 33);
 }
 
 /* end of general style  */
@@ -116,7 +122,7 @@ main {
   row-gap: 25px;
   border: 1px solid green;
   padding: 80px 97px 80px 97px;
-  margin-bottom: 74px 0px;
+  margin: 74px 0px;
 }
 .task-section .why-dev {
   text-align: center;
@@ -157,10 +163,10 @@ main {
 }
 
 .task-about .desc {
-  color: rgb(13, 19, 33);
+  color: rgb(13, 19, 33, 07);
   font-size: 15px;
   line-height: 23px;
-  opacity: 0.7;
+
   margin-bottom: 32px;
 }
 .task-img {
@@ -171,3 +177,23 @@ main {
 }
 
 /* end of task section style  (inside main) */
+
+.inspiration-section {
+}
+
+.inspiration-about {
+  text-align: center;
+  border: 1px solid blue;
+  width: 80%;
+  margin: 0 auto;
+}
+.inspiration-about .title {
+  margin: 16px;
+}
+.inspiration-about .desc {
+  margin-bottom: 48px;
+}
+.inspiration-thumbnail {
+  background-color: rgb(210, 17, 17);
+  padding: 20px;
+}
