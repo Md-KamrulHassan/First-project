@@ -6,14 +6,28 @@
   box-sizing: border-box;
 }
 
-/* header section styles */
+.primary-button {
+  padding: 12px 20px 12px 20px;
+  opacity: 0.7;
+  color: black;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.primary-font-color {
+  color: rgb(13, 19, 33, 0.7);
+}
+
+/* end of general style  */
+
+/* start of header section styles */
 
 header {
 }
-/* nav section */
+/* nav section (inside header) */
 nav {
   padding: 30px 0px;
-  border: 1px solid red;
 }
 
 nav > ul {
@@ -21,10 +35,11 @@ nav > ul {
   justify-content: space-around;
 }
 
-/* hero section */
+/* end of nav styles (inside header) */
+
+/* start of the hero section (inside header) */
 
 .hero-section {
-  border: 1px solid red;
   max-width: 1536px;
   height: 695px;
   display: flex;
@@ -38,7 +53,7 @@ nav > ul {
 
 .hero-content {
   width: 50%;
-  border: 1px solid red;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -55,12 +70,14 @@ nav > ul {
   font-size: 30px;
   font-weight: 800;
   line-height: 44px;
+  margin: 30px 0px 22px;
 }
 .hero-content .desc {
   color: rgb(13, 19, 33);
   font-size: 15px;
   line-height: 23px;
   margin-bottom: 32px;
+  opacity: 0.7;
 }
 
 .hero-content button {
@@ -69,11 +86,88 @@ nav > ul {
   color: white;
   border-radius: 8px;
   cursor: pointer;
+  font-weight: 600;
 }
-/* main section styles  */
+
+/* end of the hero section styles (inside header) */
+
+/* header section styles ended  */
+
+/* Start of main  section styles  */
 main {
   margin: 70px;
 }
-.service .why-us {
+
+.main-menu-container {
+  width: 90%;
+
+  margin: 0 auto;
+
+  border: 1px solid red;
+}
+
+/* start of task section style  (inside main)*/
+
+.task-section {
+  border-radius: 16px;
+  background: rgba(13, 19, 33, 0.02);
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  border: 1px solid green;
+  padding: 80px 97px 80px 97px;
+  margin-bottom: 74px 0px;
+}
+.task-section .why-dev {
   text-align: center;
 }
+.task-section .why-dev .title {
+  color: rgb(13, 19, 33);
+  margin-bottom: 24px;
+}
+
+.task-section .why-dev .desc {
+  color: rgb(13, 19, 33);
+  font-size: 15px;
+  line-height: 23px;
+  opacity: 0.7;
+}
+
+/* services styles  */
+
+.tasks {
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(
+    90deg,
+    rgb(255, 255, 255),
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.task-about {
+  width: 65%;
+}
+
+.task-about .title {
+  color: rgb(13, 19, 33, 0.7);
+  margin-bottom: 16px;
+  line-height: 28px;
+}
+
+.task-about .desc {
+  color: rgb(13, 19, 33);
+  font-size: 15px;
+  line-height: 23px;
+  opacity: 0.7;
+  margin-bottom: 32px;
+}
+.task-img {
+  width: 25%;
+}
+.task-img img {
+  width: 190px;
+}
+
+/* end of task section style  (inside main) */
