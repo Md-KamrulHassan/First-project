@@ -146,10 +146,10 @@ main {
   row-gap: 25px;
 
   padding: 80px 97px 80px 97px;
-  margin: 74px 0px;
 }
 .task-section .why-dev {
   text-align: center;
+  margin-bottom: 15px;
 }
 .task-section .why-dev .title {
   color: rgb(13, 19, 33);
