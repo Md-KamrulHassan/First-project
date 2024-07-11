@@ -174,6 +174,7 @@ main {
     rgb(255, 255, 255),
     rgba(255, 255, 255, 0) 100%
   );
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
 }
 
 .task-about {
@@ -220,6 +221,7 @@ main {
 .nextTarget-about .title {
   margin: 16px;
   font-weight: 900;
+  font-size: 22px;
 }
 
 .inspiration-thumbnail {
@@ -227,7 +229,7 @@ main {
   border: 1px solid rgba(13, 19, 33, 0.2);
 }
 
-/* start of target section  */
+/* start of current target section  */
 
 .target-section {
   margin: 50px 0px;
@@ -244,6 +246,7 @@ main {
   display: flex;
   flex-direction: column;
   row-gap: 10px;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.05);
 }
 
 .target-card-section .card img {
@@ -332,7 +335,7 @@ main {
   color: white;
   opacity: 0.7;
 }
-.input-items {
+.form-items {
   margin-top: 20px;
 }
 
@@ -340,8 +343,9 @@ input[type="text"] {
   width: 500px;
   padding: 19px 20px;
   font-size: 15px;
-  border: 1px solid rgba(13, 19, 33, 0.15);
+
   border-radius: 8px;
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
 }
 input[type="submit"] {
   border: 1px solid rgba(13, 19, 33, 0.15);
